@@ -1,0 +1,17 @@
+{
+  "name": "ariaens-hoveniers-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.5.1",
+    "astro": "^7.2.9",
+    "typescript": "^5.9.2"
+  }
+}

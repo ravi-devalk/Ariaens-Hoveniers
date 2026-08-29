@@ -1,0 +1,6 @@
+# Ariaens Hoveniers
+
+Demo van drie visuele richtingen voor een hovenierswebsite.
+
+- [Home](https://ravi-devalk.github.io/Ariaens-Hoveniers/): diensten, projecten, werkwijze en offerte-route.
+- Bedrijf: Ariaens Hoveniers, specialist in tuinaanleg en onderhoud sinds 2023.
