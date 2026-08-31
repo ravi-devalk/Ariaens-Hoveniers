@@ -692,6 +692,166 @@ h2 {
   }
 }
 
+/* Drie volwaardige paletten: groen, oxblood en kobalt. */
+html[data-style="atelier"] {
+  --scheme-ink: oklch(25% 0.055 20);
+  --scheme-accent: oklch(46% 0.12 25);
+  --scheme-bg: oklch(97% 0.012 20);
+  --scheme-soft: oklch(91% 0.035 20);
+  --scheme-line: oklch(80% 0.03 20);
+}
+
+html[data-style="atelier"] .design-atelier,
+html[data-style="atelier"] .essentials,
+html[data-style="atelier"] .credits {
+  background: var(--scheme-bg);
+  color: var(--scheme-ink);
+}
+html[data-style="atelier"] .design-atelier .a-nav,
+html[data-style="atelier"] .design-atelier .a-manifest {
+  border-color: var(--scheme-line);
+}
+html[data-style="atelier"] .design-atelier .a-nav a:last-child,
+html[data-style="atelier"] .e-primary,
+html[data-style="atelier"] .contact-block button {
+  background: var(--scheme-accent);
+  color: white;
+}
+html[data-style="atelier"] .design-atelier .a-nav small,
+html[data-style="atelier"] .design-atelier .a-hero > div > p:last-child,
+html[data-style="atelier"] .design-atelier .a-manifest > div,
+html[data-style="atelier"] .design-atelier .a-gallery figcaption,
+html[data-style="atelier"] .e-section > header > p:last-child,
+html[data-style="atelier"] .service-cards p,
+html[data-style="atelier"] .about-area > div > p:last-child,
+html[data-style="atelier"] .contact-block small {
+  color: oklch(39% 0.035 20);
+}
+html[data-style="atelier"] .design-atelier .a-hero > div > p:first-child,
+html[data-style="atelier"] .design-atelier .a-hero em,
+html[data-style="atelier"] .design-atelier .a-manifest > p,
+html[data-style="atelier"] .design-atelier .a-manifest li b,
+html[data-style="atelier"] .e-label {
+  color: var(--scheme-accent);
+}
+html[data-style="atelier"] .design-atelier .a-contact,
+html[data-style="atelier"] .e-hero,
+html[data-style="atelier"] .contact-block,
+html[data-style="atelier"] .about-area aside {
+  background: var(--scheme-soft);
+  color: var(--scheme-ink);
+}
+html[data-style="atelier"] .design-atelier .a-manifest li,
+html[data-style="atelier"] .service-cards article,
+html[data-style="atelier"] .contact-block input,
+html[data-style="atelier"] .contact-block textarea {
+  border-color: var(--scheme-line);
+}
+html[data-style="atelier"] .service-cards article,
+html[data-style="atelier"] .area-tags span {
+  background: oklch(99% 0.004 20);
+}
+html[data-style="atelier"] .service-cards article > span {
+  background: var(--scheme-soft);
+  color: var(--scheme-accent);
+}
+html[data-style="atelier"] .e-whatsapp {
+  border-color: var(--scheme-accent);
+  color: var(--scheme-accent);
+}
+html[data-style="atelier"] .assurances {
+  background: var(--scheme-ink);
+}
+html[data-style="atelier"] .assurances .e-label,
+html[data-style="atelier"] .assurances b {
+  color: oklch(78% 0.075 25);
+}
+
+html[data-style="line"] {
+  --scheme-ink: oklch(23% 0.055 255);
+  --scheme-accent: oklch(47% 0.145 250);
+  --scheme-bg: oklch(97% 0.015 250);
+  --scheme-soft: oklch(91% 0.035 250);
+  --scheme-line: oklch(79% 0.035 250);
+}
+html[data-style="line"] .design-line,
+html[data-style="line"] .essentials,
+html[data-style="line"] .credits {
+  background: var(--scheme-bg);
+  color: var(--scheme-ink);
+}
+html[data-style="line"] .design-line .l-nav a:last-child,
+html[data-style="line"] .e-primary,
+html[data-style="line"] .contact-block button {
+  background: var(--scheme-accent);
+  color: white;
+}
+html[data-style="line"] .design-line .l-nav span,
+html[data-style="line"] .design-line .l-hero aside,
+html[data-style="line"] .design-line .l-projects figcaption,
+html[data-style="line"] .e-section > header > p:last-child,
+html[data-style="line"] .service-cards p,
+html[data-style="line"] .about-area > div > p:last-child,
+html[data-style="line"] .contact-block small {
+  color: oklch(39% 0.045 250);
+}
+html[data-style="line"] .design-line .l-hero > div span,
+html[data-style="line"] .design-line .l-hero aside a,
+html[data-style="line"] .design-line .l-projects header span,
+html[data-style="line"] .design-line .l-process > span,
+html[data-style="line"] .design-line .l-process li b,
+html[data-style="line"] .e-label {
+  color: var(--scheme-accent);
+}
+html[data-style="line"] .design-line .l-specs div,
+html[data-style="line"] .e-hero,
+html[data-style="line"] .contact-block,
+html[data-style="line"] .about-area aside {
+  background: var(--scheme-soft);
+  color: var(--scheme-ink);
+}
+html[data-style="line"] .design-line .l-projects figure,
+html[data-style="line"] .design-line .l-projects .wide,
+html[data-style="line"] .design-line .l-process li,
+html[data-style="line"] .service-cards article,
+html[data-style="line"] .area-tags span {
+  background: oklch(99% 0.004 250);
+}
+html[data-style="line"] .service-cards article,
+html[data-style="line"] .contact-block input,
+html[data-style="line"] .contact-block textarea {
+  border-color: var(--scheme-line);
+}
+html[data-style="line"] .service-cards article > span {
+  background: var(--scheme-soft);
+  color: var(--scheme-accent);
+}
+html[data-style="line"] .e-whatsapp {
+  border-color: var(--scheme-accent);
+  color: var(--scheme-accent);
+}
+html[data-style="line"] .design-line .l-contact,
+html[data-style="line"] .assurances {
+  background: var(--scheme-ink);
+}
+html[data-style="line"] .assurances .e-label,
+html[data-style="line"] .assurances b {
+  color: oklch(79% 0.09 245);
+}
+
+.credits small {
+  margin-left: auto;
+  font-size: 0.7rem;
+  opacity: 0.72;
+}
+.credits small a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+@media (max-width: 780px) {
+  .credits small { margin-left: 0; }
+}
+
 /* Luxe herpositionering — ingetogen materialen, ruime compositie, geen nep-statussignalen. */
 :root{--lux-ink:#10261d;--lux-green:#173f30;--lux-brass:#9a7a43;--lux-mist:#f3f5f2;--lux-line:#d8ddd8}
 .switcher{background:var(--lux-ink);border-bottom:1px solid #ffffff24}.switcher button{border-color:#ffffff2e}.switcher button[aria-pressed=true]{background:#f8faf8;color:var(--lux-ink)}
@@ -1325,3 +1485,35 @@ html[data-style=atelier] .e-primary,html[data-style=atelier] .contact-block butt
     height: 270px;
   }
 }
+
+/* Palette-laag staat bewust als laatste, zodat elk ontwerp zijn eigen kleurwereld houdt. */
+html[data-style="atelier"] .design-atelier { background: var(--scheme-bg); color: var(--scheme-ink); }
+html[data-style="atelier"] .design-atelier .a-nav,
+html[data-style="atelier"] .design-atelier .a-manifest { border-color: var(--scheme-line); }
+html[data-style="atelier"] .design-atelier .a-nav a:last-child { background: var(--scheme-accent); color: white; }
+html[data-style="atelier"] .design-atelier .a-nav small,
+html[data-style="atelier"] .design-atelier .a-hero > div > p:last-child,
+html[data-style="atelier"] .design-atelier .a-manifest > div,
+html[data-style="atelier"] .design-atelier .a-gallery figcaption { color: oklch(39% 0.035 20); }
+html[data-style="atelier"] .design-atelier .a-hero > div > p:first-child,
+html[data-style="atelier"] .design-atelier .a-hero em,
+html[data-style="atelier"] .design-atelier .a-manifest > p,
+html[data-style="atelier"] .design-atelier .a-manifest li b { color: var(--scheme-accent); }
+html[data-style="atelier"] .design-atelier .a-contact { background: var(--scheme-soft); color: var(--scheme-ink); }
+html[data-style="atelier"] .design-atelier .a-manifest li { border-color: var(--scheme-line); }
+
+html[data-style="line"] .design-line { background: var(--scheme-bg); color: var(--scheme-ink); }
+html[data-style="line"] .design-line .l-nav a:last-child { background: var(--scheme-accent); color: white; }
+html[data-style="line"] .design-line .l-nav span,
+html[data-style="line"] .design-line .l-hero aside,
+html[data-style="line"] .design-line .l-projects figcaption { color: oklch(39% 0.045 250); }
+html[data-style="line"] .design-line .l-hero > div span,
+html[data-style="line"] .design-line .l-hero aside a,
+html[data-style="line"] .design-line .l-projects header span,
+html[data-style="line"] .design-line .l-process > span,
+html[data-style="line"] .design-line .l-process li b { color: var(--scheme-accent); }
+html[data-style="line"] .design-line .l-specs div { background: var(--scheme-soft); color: var(--scheme-ink); }
+html[data-style="line"] .design-line .l-projects figure,
+html[data-style="line"] .design-line .l-projects .wide,
+html[data-style="line"] .design-line .l-process li { background: oklch(99% 0.004 250); }
+html[data-style="line"] .design-line .l-contact { background: var(--scheme-ink); color: white; }

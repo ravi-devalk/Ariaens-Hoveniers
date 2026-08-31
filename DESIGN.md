@@ -6,7 +6,7 @@ Drie volwaardige presentaties binnen één site: **Levend groen** (licht, zacht 
 
 ## Colour
 
-De merkanker is `oklch(0.40 0.106 150)`. Alle kleuren zijn OKLCH. Iedere richting heeft eigen oppervlakken, maar behoudt groen als herkenningspunt. Tekstcontrasten halen minimaal WCAG AA.
+Iedere richting heeft een eigen, herkenbaar schema. **Levend groen** combineert dennengroen met messing en lichte groentinten. **Atelier buiten** gebruikt oxblood, kleirood en een zachte roze-neutrale ondergrond. **Buitenlijn** gebruikt nachtblauw, helder kobaltblauw en koele oppervlakken. Tekstcontrasten halen minimaal WCAG AA.
 
 ## Typography
 
@@ -14,7 +14,7 @@ System fonts voor snelheid. Levend groen gebruikt een vriendelijke humanistische
 
 ## Components
 
-Een vaste stijlwisselaar, hero, diensten, projectgalerij, voor/na-vergelijking, werkwijze, offerteblok en footer. Hoeken blijven beheerst; beeld en typografie dragen de identiteit.
+Een vaste stijlwisselaar, hero, diensten, projectgalerij, werkwijze, offerteblok en footer. Hoeken blijven beheerst; beeld en typografie dragen de identiteit.
 
 ## Layout
 
