@@ -22,4 +22,4 @@ Ruime contentbreedte, wisselend ritme en beeldgedreven composities. Mobiel stape
 
 ## Motion
 
-Kleine fades, clip-reveals en sliderfeedback. `prefers-reduced-motion` schakelt dit uit.
+Atelier buiten heeft één groot kinetisch tuinplan in de hero: langzaam draaiende banen, assen en knooppunten geven het ontwerp een uitgesproken ruimtelijk karakter. De overige richtingen blijven rustig. `prefers-reduced-motion` maakt het object statisch.
