@@ -1501,6 +1501,25 @@ html[data-style="atelier"] .design-atelier .a-manifest > p,
 html[data-style="atelier"] .design-atelier .a-manifest li b { color: var(--scheme-accent); }
 html[data-style="atelier"] .design-atelier .a-contact { background: var(--scheme-soft); color: var(--scheme-ink); }
 html[data-style="atelier"] .design-atelier .a-manifest li { border-color: var(--scheme-line); }
+.design-atelier .a-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  line-height: 1;
+}
+.design-atelier .a-brand img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.design-atelier .a-brand span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.95rem;
+}
+.design-atelier .a-brand small { margin: 0; }
 
 html[data-style="line"] .design-line { background: var(--scheme-bg); color: var(--scheme-ink); }
 html[data-style="line"] .design-line .l-nav a:last-child { background: var(--scheme-accent); color: white; }
