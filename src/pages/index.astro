@@ -4,6 +4,7 @@ import Seo from '@jdevalk/astro-seo-graph/Seo.astro';
 
 const base = import.meta.env.BASE_URL;
 const asset = (path: string) => `${base}/${path}`.replace(/\/+/g, '/');
+const page = (path: string) => path;
 const canonical = new URL(base, Astro.site);
 const title = 'Ariaens Hoveniers | Tuinaanleg en onderhoud in Wijchen';
 const description = 'Ariaens Hoveniers legt tuinen aan, renoveert en verzorgt tuinonderhoud in Wijchen, Druten en omgeving. Bespreek je tuin direct met Jaap.';
@@ -26,27 +27,26 @@ const schema = {
   <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Ariaens Hoveniers, naar boven"><img src={asset('images/logo.jpg')} alt="" width="150" height="150" /></a>
-    <nav aria-label="Hoofdnavigatie"><a href="#diensten">Diensten</a><a href="#projecten">Projecten</a><a href="#over-ons">Over ons</a></nav>
+    <nav aria-label="Hoofdnavigatie"><a href="#tuinaanleg">Tuinaanleg</a><a href="#onderhoud">Onderhoud</a><a href="#tuinoptimalisatie">Tuinoptimalisatie</a><a href={page('over-ons/')}>Over ons</a></nav>
     <a class="button button-small" href={whatsapp}>Bespreek je tuin <span aria-hidden="true">↗</span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <div class="mobile-menu" id="mobile-menu" hidden><a href="#diensten">Diensten</a><a href="#projecten">Projecten</a><a href="#over-ons">Over ons</a><a href="#contact">Contact</a></div>
+    <div class="mobile-menu" id="mobile-menu" hidden><a href="#tuinaanleg">Tuinaanleg</a><a href="#onderhoud">Onderhoud</a><a href="#tuinoptimalisatie">Tuinoptimalisatie</a><a href="#projecten">Projecten</a><a href={page('over-ons/')}>Over ons</a><a href="#contact">Contact</a></div>
   </header>
   <main id="inhoud">
     <section class="hero" id="top">
-      <div class="hero-copy"><p class="intro-label">Tuinaanleg · renovatie · onderhoud</p><h1>Een tuin die klopt.<br /><span>Tot in de details.</span></h1><p class="hero-lead">Persoonlijk hovenierswerk voor buitenruimtes die zorgvuldig zijn opgebouwd en jarenlang goed blijven.</p><div class="hero-actions"><a class="button" href={whatsapp}>Bespreek je tuin via WhatsApp <span aria-hidden="true">↗</span></a><a class="text-link" href="#projecten">Bekijk het werk <span aria-hidden="true">↓</span></a></div></div>
+      <div class="hero-copy"><p class="intro-label">Tuinaanleg · onderhoud · optimalisatie</p><h1>Oog voor detail.</h1><p class="hero-lead">Wij maken en onderhouden buitenruimtes die zorgvuldig zijn opgebouwd, prettig werken en jarenlang mooi blijven.</p><div class="hero-actions"><a class="button" href={whatsapp}>Bespreek je tuin via WhatsApp <span aria-hidden="true">↗</span></a><a class="text-link" href="#projecten">Bekijk het werk <span aria-hidden="true">↓</span></a></div></div>
       <figure class="hero-image"><img src={asset('images/stock/modern-patio.jpg')} alt="Moderne tuin met natuursteen, hout en rijk groen" width="1800" height="2507" fetchpriority="high" /><figcaption>Sfeerbeeld van een hoogwaardige, groene buitenruimte</figcaption></figure>
-      <div class="hero-mark" aria-hidden="true"><img src={asset('images/logo.jpg')} alt="" /></div>
       <svg class="root-system root-hero" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M720 0V92C720 158 670 174 617 205C551 243 581 308 489 338C408 364 312 333 246 402C213 437 205 500 151 560"/><path pathLength="1" d="M720 0V118C720 199 769 219 814 260C865 307 832 365 907 401C969 431 1064 402 1121 459C1145 483 1158 522 1204 560"/><path pathLength="1" d="M720 64C689 157 628 149 563 165C473 188 456 245 374 253C302 260 269 230 195 238"/><path pathLength="1" d="M720 84C759 151 825 154 899 172C978 192 1007 249 1090 257C1148 262 1197 247 1262 277"/></svg>
     </section>
 
-    <section class="statement"><p>Van de constructie onder de tegels tot de laatste controleronde:</p><h2>wat je niet direct ziet, bepaalt hoe lang je tuin mooi blijft.</h2></section>
+    <section class="statement"><p>Een tuin is pas af als ook de basis klopt.</p><h2>Wij kijken verder dan wat je op het eerste gezicht ziet.</h2></section>
 
     <section class="services section" id="diensten">
-      <header class="section-heading"><p class="section-index">Expertise</p><h2>Alles rondom je tuin, met één vast aanspreekpunt.</h2></header>
+      <header class="section-heading"><p class="section-index">Onze expertise</p><h2>Drie disciplines. Eén vertrouwd team.</h2></header>
       <div class="service-list">
-        <article><span>01</span><div><h3>Tuinaanleg & renovatie</h3><p>Van grondwerk en bestrating tot beplanting. Zorgvuldig opgebouwd als één kloppend geheel.</p></div><a href={whatsapp}>Bespreek je plan ↗</a></article>
-        <article><span>02</span><div><h3>Volledig tuinonderhoud</h3><p>Niet alleen snoeien en wieden, maar gericht zorgen dat groen, verlichting en systemen blijven werken.</p></div><a href={whatsapp}>Bespreek onderhoud ↗</a></article>
-        <article><span>03</span><div><h3>Tuinoptimalisatie</h3><p>Beregening, verlichting en robotmaaiers slimmer instellen, zodat alles werkt wanneer het nodig is.</p></div><a href={whatsapp}>Optimaliseer je tuin ↗</a></article>
+        <article id="tuinaanleg"><span>01</span><div><h3>Tuinaanleg</h3><p>Van grondwerk en bestrating tot beplanting en renovatie. Wij bouwen de tuin zorgvuldig op als één kloppend geheel.</p></div><a href={whatsapp}>Bespreek je plan ↗</a></article>
+        <article id="onderhoud"><span>02</span><div><h3>Onderhoud</h3><p>Wij verzorgen niet alleen snoeiwerk en groen, maar houden ook verlichting en andere onderdelen van de tuin in het oog.</p></div><a href={whatsapp}>Bespreek onderhoud ↗</a></article>
+        <article id="tuinoptimalisatie"><span>03</span><div><h3>Tuinoptimalisatie</h3><p>Beregening, verlichting en robotmaaiers slim ingesteld, zodat de tuin krijgt wat nodig is en niets onnodig draait.</p></div><a href={whatsapp}>Optimaliseer je tuin ↗</a></article>
       </div>
     </section>
 
@@ -61,12 +61,12 @@ const schema = {
 
     <section class="about section" id="over-ons">
       <div class="about-portrait"><img src={asset('images/project-1.jpg')} alt="Jaap Ariaens van Ariaens Hoveniers" width="480" height="640" loading="lazy" /><span>Jaap Ariaens</span></div>
-      <div class="about-copy"><p class="section-index">Over Ariaens</p><h2>Je weet wie er in je tuin staat.</h2><p class="about-lead">Jaap werkt persoonlijk, direct en met een vaste groep vakmensen. Hij blijft zelf betrokken bij het werk en bewaakt de kwaliteit van begin tot eind.</p><p>Al vanaf jonge leeftijd werkt Jaap buiten. Na jaren ervaring bij hoveniersbedrijven en het afronden van zijn vakopleiding begon hij Ariaens Hoveniers. Met korte lijnen, duidelijke afspraken en aandacht voor wat een tuin écht nodig heeft.</p><blockquote>“Als ik klaar denk te zijn, loop ik altijd nog één ronde. Er is altijd een detail dat aandacht verdient.”</blockquote></div>
+      <div class="about-copy"><p class="section-index">Over ons</p><h2>Je weet wie er in je tuin staat.</h2><p class="about-lead">Wij werken persoonlijk, direct en met een vaste groep vakmensen. Jaap blijft zelf betrokken en bewaakt de kwaliteit van begin tot eind.</p><p>Die betrokkenheid begon al vroeg. Op zijn dertiende werkte Jaap mee bij een boer; twee jaar later zette hij zijn eerste stappen bij een hoveniersbedrijf.</p><a class="inline-button" href={page('over-ons/')}>Lees het hele verhaal ↗</a><blockquote>“Als ik klaar denk te zijn, loop ik altijd nog één ronde. Er is altijd een detail dat aandacht verdient.”</blockquote></div>
     </section>
 
-    <section class="certainties"><h2>Zo werkt Ariaens.</h2><ul><li><span>01</span><strong>Eén vast aanspreekpunt</strong><p>Direct contact met Jaap, zonder mensen ertussen.</p></li><li><span>02</span><strong>Degelijk opgebouwd</strong><p>Aandacht voor de basis, materialen en lange levensduur.</p></li><li><span>03</span><strong>Netjes achtergelaten</strong><p>Na het werk wordt de tuin verzorgd opgeleverd.</p></li><li><span>04</span><strong>Snel bereikbaar</strong><p>Een vraag of foto deel je gemakkelijk via WhatsApp.</p></li></ul></section>
+    <section class="certainties"><h2>Zo werken wij.</h2><ul><li><span>01</span><strong>Eén vast aanspreekpunt</strong><p>Direct contact met Jaap, zonder mensen ertussen.</p></li><li><span>02</span><strong>Degelijk opgebouwd</strong><p>Aandacht voor de basis, materialen en lange levensduur.</p></li><li><span>03</span><strong>Netjes achtergelaten</strong><p>Na het werk wordt de tuin verzorgd opgeleverd.</p></li><li><span>04</span><strong>Snel bereikbaar</strong><p>Een vraag of foto deel je gemakkelijk via WhatsApp.</p></li></ul></section>
 
-    <section class="area section"><div><p class="section-index">Dichtbij huis</p><h2>Werkgebied</h2></div><div><p>Ariaens werkt voornamelijk in Wijchen en omgeving. Ook voor passende projecten in Druten en Nijmegen kun je direct contact opnemen.</p><ul aria-label="Werkgebied"><li>Wijchen</li><li>Druten</li><li>Nijmegen</li><li>Directe omgeving</li></ul></div></section>
+    <section class="area section"><div><p class="section-index">Dichtbij huis</p><h2>Werkgebied</h2></div><div><p>Wij werken voornamelijk in Wijchen en omgeving. Ook voor passende projecten in Druten en Nijmegen kun je direct contact opnemen.</p><ul aria-label="Werkgebied"><li>Wijchen</li><li>Druten</li><li>Nijmegen</li><li>Directe omgeving</li></ul></div></section>
 
     <section class="contact" id="contact">
       <svg class="root-system root-contact" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true"><path d="M720 560V420C720 350 660 329 609 288C552 243 586 182 502 145C432 114 351 143 278 85C249 62 229 28 205 0"/><path d="M720 560V438C720 357 777 332 832 291C895 244 865 190 940 150C1010 112 1084 131 1169 67C1197 46 1218 22 1237 0"/></svg>

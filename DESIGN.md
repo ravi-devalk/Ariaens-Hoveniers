@@ -2,23 +2,22 @@
 
 ## Direction
 
-Een grafisch landschap in zwart, wit en fris groen. Het lijnwerk uit het logo groeit als wortels door de pagina en verbindt hero, bewijs en contact. Grote fotografie wordt gecombineerd met compacte, duidelijke typografie.
+Een luxe, grafisch landschap in zwart en wit. De horizontale lijnen uit de busbelettering lopen vanuit het logo door de compositie en groeien op enkele plekken als wortels verder. Donkergroen is uitsluitend een actiekleur.
 
 ## Colour
 
-- Inkt: `#0b0d0c`
-- Wortelgroen: `#b9ef3d`
-- Bosgroen: `#183225`
-- Licht vlak: `#eef1ed`
+- Inkt: `#000000`
+- Actiegroen: `#31573b`
+- Licht vlak: `#f2f2f0`
 - Wit: `#ffffff`
 
 ## Typography
 
-Barlow Condensed voor krachtige, compacte koppen. Archivo voor rustige lopende tekst, navigatie en bediening. Koppen blijven maximaal 96 pixels en minimaal `-0.025em` gespatieerd.
+Marcellus voor rustige, karaktervolle koppen die aansluiten op het logo. Manrope voor lopende tekst, navigatie en bediening. Koppen blijven maximaal 96 pixels en minimaal `-0.02em` gespatieerd.
 
 ## Components
 
-Groot logoblok, donkere beeldhero, geanimeerd wortelstelsel, dienstenlijst, asymmetrische projectgalerij, persoonlijk portret, zekerheden, werkgebied, contactfinale en zwevende WhatsApp-knop.
+Groot vrijstaand logo, doorlopende lijnvoering, donkere beeldhero, drie afzonderlijk bereikbare diensten, asymmetrische projectgalerij, uitgebreide Over ons-pagina, zekerheden, werkgebied, contactfinale en zwevende WhatsApp-knop.
 
 ## Layout
 
