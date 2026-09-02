@@ -1,0 +1,84 @@
+---
+import '../styles/global.css';
+import Seo from '@jdevalk/astro-seo-graph/Seo.astro';
+
+interface Item { title: string; text: string }
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  eyebrow: string;
+  heading: string;
+  lead: string;
+  heroImage: string;
+  heroAlt: string;
+  imageLabel: string;
+  items: Item[];
+  storyTitle: string;
+  storyLead: string;
+  storyText: string;
+  detailImage: string;
+  detailAlt: string;
+  closing: string;
+}
+
+const props = Astro.props as Props;
+const base = import.meta.env.BASE_URL;
+const asset = (path: string) => `${base}/${path}`.replace(/\/+/g, '/');
+const canonical = new URL(`${base}/${props.slug}/`.replace(/\/+/g, '/'), Astro.site);
+const whatsapp = `https://wa.me/31631219202?text=${encodeURIComponent(`Hallo Jaap, ik wil graag meer weten over ${props.eyebrow.toLowerCase()}.`)}`;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: props.eyebrow,
+  description: props.description,
+  provider: { '@type': 'LandscapingBusiness', name: 'Ariaens Hoveniers', telephone: '+31631219202' },
+  areaServed: ['Wijchen', 'Druten', 'Nijmegen'],
+  url: canonical.href,
+};
+---
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href={asset('images/logo.jpg')} />
+    <Seo title={props.title} description={props.description} canonical={canonical} siteName="Ariaens Hoveniers" locale="nl_NL" ogImage={new URL(asset(props.heroImage), Astro.site).href} ogImageAlt={props.heroAlt} graph={schema} twitter={{ card: 'summary_large_image' }} />
+  </head>
+  <body class="service-page">
+    <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
+    <header class="site-header inner-header">
+      <a class="wordmark" href="../index.html" aria-label="Naar de homepage"><img src={asset('images/logo.jpg')} alt="" width="150" height="150" /></a>
+      <nav aria-label="Hoofdnavigatie"><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a></nav>
+      <a class="button button-small" href={whatsapp}>Neem contact op <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <div class="mobile-menu" id="mobile-menu" hidden><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a><a href="#contact">Contact</a></div>
+    </header>
+    <main id="inhoud">
+      <section class="service-hero">
+        <div class="service-hero-copy"><p class="intro-label">{props.eyebrow} · Wijchen en omgeving</p><h1>{props.heading}</h1><p>{props.lead}</p><a class="button" href={whatsapp}>Bespreek je tuin <span aria-hidden="true">↗</span></a></div>
+        <figure><img src={asset(props.heroImage)} alt={props.heroAlt} width="1800" height="2507" fetchpriority="high" /><figcaption>{props.imageLabel}</figcaption></figure>
+      </section>
+
+      <section class="service-scope section">
+        <header><p class="section-index">Wat we doen</p><h2>Verzorgd tot in de details.</h2></header>
+        <ol>{props.items.map((item, index) => <li><span>0{index + 1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol>
+      </section>
+
+      <section class="service-story">
+        <figure><img src={asset(props.detailImage)} alt={props.detailAlt} width="1800" height="2700" loading="lazy" /></figure>
+        <div><p class="section-index">Onze aanpak</p><h2>{props.storyTitle}</h2><p class="story-lead">{props.storyLead}</p><p>{props.storyText}</p><a class="inline-button" href="../over-ons/">Lees hoe wij werken ↗</a></div>
+      </section>
+
+      <section class="contact service-contact" id="contact"><div class="contact-inner"><p>{props.closing}</p><h2>Vertel ons wat je voor ogen hebt.</h2><a class="button" href={whatsapp}>Neem contact op <span aria-hidden="true">↗</span></a><div class="contact-options"><a href="tel:+31631219202">06 31 21 92 02</a><a href="mailto:info@arienshoveniers.nl">info@arienshoveniers.nl</a></div></div></section>
+    </main>
+    <footer><a class="footer-logo" href="../index.html"><img src={asset('images/logo.jpg')} alt="Ariaens Hoveniers" width="150" height="150" /></a><div><p>Tuinaanleg · onderhoud · optimalisatie</p><p>Wijchen en omgeving</p></div><div><a href="https://www.instagram.com/ariaens_hoveniers/">Instagram ↗</a><a href="../index.html">Terug naar home</a></div><small>Gemaakt door <a href="https://ravi.nl/">Ravi WebDesign</a></small></footer>
+    <a class="whatsapp" href={whatsapp} aria-label="Neem contact op via WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.1 3.2A12.6 12.6 0 0 0 5.4 22.5L3.7 28.8l6.4-1.7a12.6 12.6 0 1 0 6-23.9Zm0 22.9c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a10.3 10.3 0 1 1 8.7 4.7Zm5.7-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.7.1-1.8-.9-3-1.6-4.2-3.7-.3-.6.3-.5.9-1.7.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.3 3.5 1.5 3.7c.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.4.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.5Z" /></svg><b>WhatsApp</b></a>
+    <script>
+      const button = document.querySelector<HTMLButtonElement>('.menu-button'); const menu = document.querySelector<HTMLElement>('#mobile-menu');
+      button?.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') === 'true'; button.setAttribute('aria-expanded', String(!open)); if (menu) menu.hidden = open; });
+      menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { button?.setAttribute('aria-expanded', 'false'); if (menu) menu.hidden = true; }));
+    </script>
+  </body>
+</html>

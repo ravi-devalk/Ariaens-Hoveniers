@@ -3,4 +3,8 @@
 Besloten preview van de website voor Ariaens Hoveniers.
 
 - [Home](https://ravi-webdesign.pages.dev/showcase/): aanleg, renovatie, onderhoud, projecten en direct contact.
+- [Tuinaanleg](https://ravi-webdesign.pages.dev/showcase/tuinaanleg/): grondwerk, bestrating, beplanting en tuinrenovatie.
+- [Onderhoud](https://ravi-webdesign.pages.dev/showcase/onderhoud/): snoeiwerk, beplanting, seizoensonderhoud en controle van tuintechniek.
+- [Tuinoptimalisatie](https://ravi-webdesign.pages.dev/showcase/tuinoptimalisatie/): beregening, tuinverlichting, robotmaaien en samenhang tussen techniek en groen.
+- [Over ons](https://ravi-webdesign.pages.dev/showcase/over-ons/): het verhaal en de werkwijze van Jaap Ariaens.
 - Bedrijf: Ariaens Hoveniers in Wijchen en omgeving.

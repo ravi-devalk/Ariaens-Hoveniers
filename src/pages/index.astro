@@ -27,10 +27,10 @@ const schema = {
   <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Ariaens Hoveniers, naar boven"><img src={asset('images/logo.jpg')} alt="" width="150" height="150" /></a>
-    <nav aria-label="Hoofdnavigatie"><a href="#tuinaanleg">Tuinaanleg</a><a href="#onderhoud">Onderhoud</a><a href="#tuinoptimalisatie">Tuinoptimalisatie</a><a href={page('over-ons/')}>Over ons</a></nav>
+    <nav aria-label="Hoofdnavigatie"><a href={page('tuinaanleg/')}>Tuinaanleg</a><a href={page('onderhoud/')}>Onderhoud</a><a href={page('tuinoptimalisatie/')}>Tuinoptimalisatie</a><a href={page('over-ons/')}>Over ons</a></nav>
     <a class="button button-small" href={whatsapp}>Bespreek je tuin <span aria-hidden="true">↗</span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <div class="mobile-menu" id="mobile-menu" hidden><a href="#tuinaanleg">Tuinaanleg</a><a href="#onderhoud">Onderhoud</a><a href="#tuinoptimalisatie">Tuinoptimalisatie</a><a href="#projecten">Projecten</a><a href={page('over-ons/')}>Over ons</a><a href="#contact">Contact</a></div>
+    <div class="mobile-menu" id="mobile-menu" hidden><a href={page('tuinaanleg/')}>Tuinaanleg</a><a href={page('onderhoud/')}>Onderhoud</a><a href={page('tuinoptimalisatie/')}>Tuinoptimalisatie</a><a href="#projecten">Projecten</a><a href={page('over-ons/')}>Over ons</a><a href="#contact">Contact</a></div>
   </header>
   <main id="inhoud">
     <svg class="site-vines" viewBox="0 0 1280 6200" preserveAspectRatio="none" aria-hidden="true">
@@ -47,9 +47,9 @@ const schema = {
     <section class="services section" id="diensten">
       <header class="section-heading"><p class="section-index">Onze expertise</p><h2>Drie disciplines. Eén vertrouwd team.</h2></header>
       <div class="service-list">
-        <article id="tuinaanleg"><span>01</span><div><h3>Tuinaanleg</h3><p>Van grondwerk en bestrating tot beplanting en renovatie. Wij bouwen de tuin zorgvuldig op als één kloppend geheel.</p></div><a href={whatsapp}>Bespreek je plan ↗</a></article>
-        <article id="onderhoud"><span>02</span><div><h3>Onderhoud</h3><p>Wij verzorgen niet alleen snoeiwerk en groen, maar houden ook verlichting en andere onderdelen van de tuin in het oog.</p></div><a href={whatsapp}>Bespreek onderhoud ↗</a></article>
-        <article id="tuinoptimalisatie"><span>03</span><div><h3>Tuinoptimalisatie</h3><p>Beregening, verlichting en robotmaaiers slim ingesteld, zodat de tuin krijgt wat nodig is en niets onnodig draait.</p></div><a href={whatsapp}>Optimaliseer je tuin ↗</a></article>
+        <article id="tuinaanleg"><span>01</span><div><h3>Tuinaanleg</h3><p>Van grondwerk en bestrating tot beplanting en renovatie. Wij bouwen de tuin zorgvuldig op als één kloppend geheel.</p></div><a href={page('tuinaanleg/')}>Bekijk tuinaanleg ↗</a></article>
+        <article id="onderhoud"><span>02</span><div><h3>Onderhoud</h3><p>Wij verzorgen niet alleen snoeiwerk en groen, maar houden ook verlichting en andere onderdelen van de tuin in het oog.</p></div><a href={page('onderhoud/')}>Bekijk onderhoud ↗</a></article>
+        <article id="tuinoptimalisatie"><span>03</span><div><h3>Tuinoptimalisatie</h3><p>Beregening, verlichting en robotmaaiers slim ingesteld, zodat de tuin krijgt wat nodig is en niets onnodig draait.</p></div><a href={page('tuinoptimalisatie/')}>Bekijk optimalisatie ↗</a></article>
       </div>
     </section>
 
