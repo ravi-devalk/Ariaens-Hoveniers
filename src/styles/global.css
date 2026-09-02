@@ -99,6 +99,15 @@ p {
   right: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.72);
 }
+.site-header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 108px;
+  left: 138px;
+  right: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.72);
+}
 .wordmark {
   position: relative;
   z-index: 1;
@@ -152,6 +161,31 @@ p {
 .menu-button,
 .mobile-menu {
   display: none;
+}
+main {
+  position: relative;
+}
+.site-vines {
+  position: absolute;
+  z-index: 6;
+  top: 101px;
+  bottom: 0;
+  left: max(158px, calc((100vw - 1240px) / 2 + 138px));
+  width: calc(100% - max(158px, calc((100vw - 1240px) / 2 + 138px)));
+  height: calc(100% - 101px);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+.site-vines path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.22;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: grow 3.2s 0.2s var(--ease) forwards;
 }
 .hero {
   position: relative;
@@ -614,6 +648,13 @@ footer > small {
   .site-header::after {
     left: 82px;
   }
+  .site-header::before {
+    left: 82px;
+  }
+  .site-vines {
+    left: 98px;
+    width: calc(100% - 98px);
+  }
   .site-header nav,
   .site-header > .button {
     display: none;
@@ -818,6 +859,9 @@ footer > small {
     transition-duration: 0.01ms !important;
   }
   .root-hero path {
+    stroke-dashoffset: 0;
+  }
+  .site-vines path {
     stroke-dashoffset: 0;
   }
 }
