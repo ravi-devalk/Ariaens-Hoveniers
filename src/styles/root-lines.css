@@ -1,0 +1,13 @@
+.about-vines .vine-spine {
+  stroke-width: 1.55;
+  opacity: 0.72;
+  animation-delay: 0.65s;
+  animation-duration: 4.5s;
+}
+
+.about-vines .vine-spine-branch {
+  stroke-width: 1px;
+  opacity: 0.46;
+  animation-delay: 1.45s;
+  animation-duration: 3.4s;
+}
