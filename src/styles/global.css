@@ -2105,11 +2105,6 @@ html[data-style="line"] .design-line { background: var(--d-bg); color: var(--d-i
 .design-line .d-hero-image img { border-radius: 4px; }
 .design-line .d-hero-image figcaption { display: flex; gap: 1rem; margin-top: .7rem; color: #56647e; font-size: .72rem; }
 .design-line .d-hero-image figcaption span { color: var(--d-blue); font-weight: 800; }
-.design-line .d-motion { overflow: hidden; border-block: 1px solid var(--d-blue); background: var(--d-blue); color: white; }
-.design-line .d-motion > div { display: flex; gap: 2.2rem; align-items: center; width: max-content; padding: 1rem 0; animation: d-marquee 24s linear infinite; }
-.design-line .d-motion span { font-size: .76rem; font-weight: 800; }
-.design-line .d-motion i { color: #a9c2ff; font-size: .62rem; font-style: normal; }
-@keyframes d-marquee { to { transform: translateX(-50%); } }
 .design-line .d-promise,
 .design-line .d-services,
 .design-line .d-projects,
@@ -2195,6 +2190,5 @@ html[data-style="line"] .credits { background: var(--d-bg); color: var(--d-ink);
   .design-line .d-promise dd { margin-top: .65rem; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .design-line .d-motion > div { animation: none; }
   .design-line .d-projects figure img { transition: none; }
 }
