@@ -246,6 +246,9 @@ main {
   inset: 0 0 0 38%;
   margin: 0;
 }
+.hero-image-brand img {
+  object-position: 58% center;
+}
 .hero-image figcaption {
   position: absolute;
   z-index: 3;
