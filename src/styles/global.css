@@ -1881,3 +1881,183 @@ html[data-style="line"] .credits { background: var(--scheme-bg); color: var(--sc
   .design-line .c-project-grid figure:nth-child(2),
   .design-line .c-project-grid figure:nth-child(3) { grid-column: auto; height: 260px; }
 }
+
+/* Garden gallery overdrive — een ruimtelijk tuinobject als hero. */
+html[data-style="line"] {
+  --scheme-ink: #17101f;
+  --scheme-accent: #7558ff;
+  --scheme-bg: #f7f5fa;
+  --scheme-soft: #e9e3f4;
+  --scheme-line: #d4cce0;
+}
+html[data-style="line"] .design-line .c-nav {
+  max-width: none;
+  padding-inline: max(1.5rem, calc((100vw - 1320px) / 2));
+  background: #17101f;
+  color: white;
+  border-color: #ffffff24;
+}
+html[data-style="line"] .design-line .c-brand small { color: #cbbfec; }
+html[data-style="line"] .design-line .c-button { border-color: #a891ff; background: #7558ff; }
+.design-line .c-hero {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  max-width: none;
+  min-height: min(920px, calc(100svh - 60px));
+  padding: clamp(6rem, 11vw, 10rem) max(1.5rem, calc((100vw - 1320px) / 2));
+  overflow: hidden;
+  background: #17101f;
+  color: white;
+}
+.design-line .c-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background: radial-gradient(circle at 70% 48%, #6043c94f 0, #17101f00 47%), radial-gradient(circle at 95% 4%, #b983ff2b 0, #17101f00 30%);
+}
+.design-line .c-hero-copy { position: relative; z-index: 4; width: min(48%, 610px); }
+.design-line .c-hero-copy > p { color: #bdadff; }
+.design-line .c-hero h1 {
+  max-width: 10ch;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(4.2rem, 7vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: .93;
+}
+.design-line .c-hero-copy > div { grid-template-columns: 1fr; max-width: 480px; }
+.design-line .c-hero-copy > div > p { color: #d1c9d7; }
+.design-line .c-hero .c-text-link { color: white; }
+.design-line .c-hero .c-text-link span { color: #bdff5f; }
+.design-line .c-kinetic {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  --shift-x: 0px;
+  --shift-y: 0px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 74%;
+  width: clamp(720px, 66vw, 1120px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%) perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  transition: transform 700ms cubic-bezier(.16,1,.3,1);
+  contain: layout paint;
+  pointer-events: none;
+}
+.design-line .c-axis,
+.design-line .c-ring,
+.design-line .c-core,
+.design-line .c-float-photo { position: absolute; display: block; }
+.design-line .c-axis { top: 50%; left: 50%; background: #ae9dff42; }
+.design-line .c-axis-a { width: 116%; height: 1px; transform: translate(-50%,-50%) rotate(-13deg); }
+.design-line .c-axis-b { width: 1px; height: 116%; transform: translate(-50%,-50%) rotate(19deg); }
+.design-line .c-ring {
+  inset: 5%;
+  border: 1px solid #b6a5ff80;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation: c-orbit 22s linear infinite;
+}
+.design-line .c-ring::before,
+.design-line .c-ring::after {
+  content: '';
+  position: absolute;
+  inset: 13%;
+  border: 1px solid #b6a5ff2e;
+  border-radius: 50%;
+  transform: rotateX(62deg);
+}
+.design-line .c-ring::after { transform: rotateY(68deg); }
+.design-line .c-ring-two { inset: 18%; border-color: #bdff5f8f; animation-duration: 15s; animation-direction: reverse; }
+.design-line .c-ring-three { inset: 32%; border-width: 2px; border-color: #d7cfff9c; animation-duration: 10s; }
+.design-line .c-ring i {
+  position: absolute;
+  width: 13px;
+  aspect-ratio: 1;
+  border: 3px solid #17101f;
+  border-radius: 50%;
+  background: #bdff5f;
+  box-shadow: 0 0 0 1px #bdff5f, 0 0 26px #bdff5f9c;
+}
+.design-line .c-ring i:nth-child(1) { top: -7px; left: 50%; }
+.design-line .c-ring i:nth-child(2) { right: 5%; bottom: 22%; }
+.design-line .c-ring i:nth-child(3) { bottom: 9%; left: 12%; }
+.design-line .c-core {
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-content: center;
+  width: 19%;
+  aspect-ratio: 1;
+  border: 1px solid #d9cfff80;
+  border-radius: 50%;
+  background: #7558ff;
+  text-align: center;
+  transform: translate(-50%,-50%) translateZ(90px);
+  box-shadow: 0 0 100px #7558ff7a;
+  animation: c-core-breathe 4s cubic-bezier(.25,1,.5,1) infinite alternate;
+}
+.design-line .c-core b { font-size: clamp(.8rem, 1.4vw, 1.15rem); letter-spacing: .12em; }
+.design-line .c-core small { margin-top: .35rem; color: #ddd5ff; font-size: .55rem; }
+.design-line .c-float-photo {
+  z-index: 3;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff61;
+  background: #30253b;
+  box-shadow: 0 18px 45px #0502086e;
+  transform: translate3d(var(--shift-x),var(--shift-y),120px);
+}
+.design-line .c-float-photo img { filter: saturate(.82) contrast(1.08); }
+.design-line .c-photo-one { top: 3%; right: 17%; width: 27%; height: 35%; animation: c-float-one 8s ease-in-out infinite alternate; }
+.design-line .c-photo-two { right: 1%; bottom: 20%; width: 22%; height: 27%; animation: c-float-two 6.5s ease-in-out infinite alternate; }
+.design-line .c-photo-three { bottom: 2%; left: 13%; width: 25%; height: 31%; animation: c-float-three 7.5s ease-in-out infinite alternate; }
+.design-line .c-kinetic-label { position: absolute; left: 6%; top: 29%; color: #d8ceff; font-size: .68rem; letter-spacing: .12em; transform: rotate(-74deg); }
+@keyframes c-orbit { to { transform: rotate(1turn); } }
+@keyframes c-core-breathe { from { transform: translate(-50%,-50%) translateZ(90px) scale(.9); } to { transform: translate(-50%,-50%) translateZ(110px) scale(1.06); } }
+@keyframes c-float-one { from { transform: translate3d(calc(var(--shift-x) - 9px),calc(var(--shift-y) + 10px),120px) rotate(-2deg); } to { transform: translate3d(calc(var(--shift-x) + 8px),calc(var(--shift-y) - 12px),145px) rotate(1deg); } }
+@keyframes c-float-two { from { transform: translate3d(calc(var(--shift-x) + 7px),calc(var(--shift-y) - 7px),105px) rotate(2deg); } to { transform: translate3d(calc(var(--shift-x) - 9px),calc(var(--shift-y) + 11px),140px) rotate(-1deg); } }
+@keyframes c-float-three { from { transform: translate3d(calc(var(--shift-x) - 5px),calc(var(--shift-y) - 8px),115px) rotate(1deg); } to { transform: translate3d(calc(var(--shift-x) + 10px),calc(var(--shift-y) + 8px),150px) rotate(-2deg); } }
+html[data-style="line"] .design-line .c-intro { background: #7558ff; }
+html[data-style="line"] .design-line .c-intro dt { color: #ded7ff; }
+html[data-style="line"] .design-line .c-service-list article span,
+html[data-style="line"] .design-line .c-process li > span { color: #7558ff; }
+html[data-style="line"] .design-line .c-contact { background: #bdff5f; }
+html[data-style="line"] .essentials .e-hero,
+html[data-style="line"] .essentials .contact-block,
+html[data-style="line"] .essentials .about-area aside { background: #e9e3f4; }
+html[data-style="line"] .essentials .e-label,
+html[data-style="line"] .essentials .e-whatsapp { color: #6246df; }
+html[data-style="line"] .essentials .e-whatsapp { border-color: #6246df; }
+
+@media (max-width: 980px) {
+  .design-line .c-hero { min-height: 920px; }
+  .design-line .c-hero-copy { width: min(68%, 590px); }
+  .design-line .c-kinetic { top: 67%; left: 68%; width: 790px; opacity: .78; }
+}
+@media (max-width: 780px) {
+  .design-line .c-hero { display: block; min-height: 860px; padding: 4.5rem 1rem; }
+  .design-line .c-hero-copy { width: 100%; }
+  .design-line .c-hero h1 { max-width: 9ch; font-size: clamp(3.25rem, 15vw, 4.8rem); }
+  .design-line .c-hero-copy > div { max-width: 34ch; }
+  .design-line .c-kinetic { top: 73%; left: 65%; width: 650px; opacity: .68; }
+  .design-line .c-photo-one { right: 22%; }
+  .design-line .c-photo-two { right: 8%; }
+}
+@media (max-width: 440px) {
+  .design-line .c-hero { min-height: 810px; }
+  .design-line .c-kinetic { top: 75%; left: 70%; width: 570px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .design-line .c-ring,
+  .design-line .c-core,
+  .design-line .c-float-photo { animation: none !important; }
+  .design-line .c-kinetic { --tilt-x: 0deg !important; --tilt-y: 0deg !important; --shift-x: 0px !important; --shift-y: 0px !important; transition: none; }
+  .design-line .c-ring-one { transform: rotate(18deg); }
+  .design-line .c-ring-two { transform: rotate(-28deg); }
+  .design-line .c-ring-three { transform: rotate(44deg); }
+}
