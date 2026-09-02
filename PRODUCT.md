@@ -10,40 +10,40 @@ web
 
 ## Users
 
-Particuliere tuineigenaren in de regio die een tuin willen laten aanleggen, vernieuwen of onderhouden. Zij willen snel zien wat Ariaens maakt en eenvoudig contact opnemen.
+Particuliere tuineigenaren in Wijchen, Druten, Nijmegen en directe omgeving. Zij zoeken degelijk hovenierswerk, willen vooraf zien wie er komt en nemen het liefst eenvoudig contact op.
 
 ## Product Purpose
 
-Een lokale demosite die drie overtuigende visuele richtingen voor Ariaens Hoveniers vergelijkbaar maakt. Succes is dat een bezoeker passend werk ziet, vertrouwen krijgt in de werkwijze en een offerte aanvraagt.
+Een professionele online presentatie van Ariaens Hoveniers. De site moet vertrouwen wekken bij doorverwezen bezoekers, het werk tonen en een direct gesprek met Jaap starten.
 
 ## Positioning
 
-Ariaens maakt en onderhoudt tuinen met zichtbaar vakwerk en een persoonlijke, directe aanpak.
+Persoonlijk hovenierswerk dat ook onder de oppervlakte zorgvuldig is opgebouwd.
 
 ## Conversion & proof
 
-- Primaire CTA: offerte aanvragen per telefoon of via een kort contactformulier.
-- Secundaire CTA: projecten bekijken.
-- Kernzin: van eerste idee tot een tuin die klopt.
-- Bewijslijn: echt werk → duidelijke diensten → heldere werkwijze → direct contact.
-- Beschikbaar bewijs: openbare projectfoto’s en bedrijfsinformatie van het Instagram-profiel. Geen reviews, klantlogo’s of resultaatclaims beschikbaar.
+- Primaire CTA: de tuin rechtstreeks via WhatsApp met Jaap bespreken.
+- Secundaire CTA: projecten en vakwerk bekijken.
+- Kernzin: Een tuin die klopt. Tot in de details.
+- Bewijslijn: heldere expertise → zichtbaar werk → Jaap als vakman → concrete zekerheden → direct contact.
+- Bewijs: portret van Jaap, één eigen uitvoeringsfoto en nieuwe projectfotografie die later wordt aangeleverd. Geen reviews of resultaatclaims.
 
 ## Brand Personality
 
-Vakkundig, benaderbaar en verzorgd. De site voelt als buiten zijn: helder, ruim en tastbaar, zonder landelijke clichés.
+Precies, gegrond en zelfverzekerd. De site voelt modern en hoogwaardig, maar blijft persoonlijk en nuchter.
 
 ## Anti-references
 
-Geen generieke hovenierstemplate, geen nepkeurmerken, geen decoratieve blaadjes overal en geen overdadige eco-claims.
+Geen generieke groene hovenierstemplate, landelijke clichés, nepkeurmerken, reviews, drukke kaartjesverzameling of luxe-uitstraling met goud en sierlijke serifletters.
 
 ## Design Principles
 
-1. Laat echt werk het verhaal dragen.
-2. Maak vergelijken eenvoudig en de offerte-route direct.
-3. Geef elke stijl een duidelijke eigen overtuiging.
-4. Houd taal concreet en bewijsbaar.
-5. Bouw toegankelijk en robuust vanaf mobiel.
+1. Laat degelijkheid en oog voor detail overal terugkomen.
+2. Geef Jaap een gezicht en maak direct contact eenvoudig.
+3. Gebruik sfeerbeelden eerlijk en label eigen werk duidelijk.
+4. Houd diensten zichtbaar zonder diepe navigatie.
+5. Laat het lijnensysteem uit het logo de hele ervaring dragen.
 
 ## Accessibility & Inclusion
 
-Semantische HTML, toetsenbordbediening, zichtbare focus, voldoende contrast, grote aanraakdoelen en ondersteuning voor minder beweging.
+Semantische HTML, toetsenbordbediening, zichtbare focus, minimaal WCAG AA-contrast, ruime aanraakdoelen en een statisch alternatief bij voorkeur voor minder beweging.

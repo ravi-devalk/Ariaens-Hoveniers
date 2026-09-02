@@ -1,10 +1,11 @@
-# Ariaens Hoveniers — drie demorichtingen
+# Ariaens Hoveniers
 
-Eén lokale Astro-site met drie visuele stijlen voor Ariaens Hoveniers. Wissel bovenaan direct tussen **Levend groen**, **Atelier buiten** en **Buitenlijn**.
+Eén complete Astro-site voor Ariaens Hoveniers, gebouwd op basis van het gesprek met Jaap. De preview wordt gepubliceerd onder `/showcase/`.
 
 ```sh
 npm install
 npm run dev
+npm run build
 ```
 
-De site gebruikt alleen openbare bedrijfsinformatie en beelden die op het Instagram-profiel van Ariaens Hoveniers stonden. De offerteformulieren zijn demo’s en versturen niets.
+De site bevat eigen portret- en uitvoeringsbeelden. Stockbeelden worden zichtbaar als sfeerbeeld aangeduid totdat de nieuwe projectfotografie beschikbaar is.

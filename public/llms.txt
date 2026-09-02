@@ -1,6 +1,6 @@
 # Ariaens Hoveniers
 
-Demo van drie visuele richtingen voor een hovenierswebsite.
+Besloten preview van de website voor Ariaens Hoveniers.
 
-- [Home](https://ravi-webdesign-1qh.pages.dev/): diensten, projecten, werkwijze en offerte-route.
-- Bedrijf: Ariaens Hoveniers, specialist in tuinaanleg en onderhoud sinds 2023.
+- [Home](https://ravi-webdesign.pages.dev/showcase/): aanleg, renovatie, onderhoud, projecten en direct contact.
+- Bedrijf: Ariaens Hoveniers in Wijchen en omgeving.

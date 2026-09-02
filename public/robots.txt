@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ravi-webdesign-1qh.pages.dev/sitemap-index.xml
+Sitemap: https://ravi-webdesign.pages.dev/showcase/sitemap-index.xml
