@@ -197,6 +197,18 @@ main {
   opacity: 0.24;
   animation-delay: 2.15s;
 }
+/* De wortel verdwijnt achter foto's en loopt onder het beeld weer door. */
+.hero-image,
+.project-grid figure,
+.about-portrait,
+.service-hero figure,
+.service-story figure,
+.about-intro figure {
+  position: relative;
+  z-index: 7;
+  isolation: isolate;
+  background: var(--ink);
+}
 .hero {
   position: relative;
   min-height: 900px;
@@ -214,11 +226,12 @@ main {
     rgba(7, 9, 8, 0.86) 38%,
     rgba(7, 9, 8, 0.06) 72%
   );
+  z-index: 8;
   pointer-events: none;
 }
 .hero-copy {
   position: relative;
-  z-index: 4;
+  z-index: 9;
   width: var(--page);
   margin: auto;
   padding-top: 245px;
@@ -261,7 +274,7 @@ main {
 }
 .hero-image figcaption {
   position: absolute;
-  z-index: 3;
+  z-index: 9;
   right: 24px;
   bottom: 20px;
   max-width: 220px;
