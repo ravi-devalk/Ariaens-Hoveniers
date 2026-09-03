@@ -51,13 +51,13 @@ const schema = {
     <header class="site-header inner-header">
       <a class="wordmark" href="../index.html" aria-label="Naar de homepage"><img src={asset('images/logo.jpg')} alt="" width="150" height="150" /></a>
       <nav aria-label="Hoofdnavigatie"><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a></nav>
-      <a class="button button-small" href={whatsapp}>Neem contact op <span aria-hidden="true">↗</span></a>
+      <a class="button button-small" href={whatsapp}>Neem contact op</a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       <div class="mobile-menu" id="mobile-menu" hidden><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a><a href="#contact">Contact</a></div>
     </header>
     <main id="inhoud">
       <section class="service-hero">
-        <div class="service-hero-copy"><p class="intro-label">{props.eyebrow} · Wijchen en omgeving</p><h1>{props.heading}</h1><p>{props.lead}</p><a class="button" href={whatsapp}>Bespreek je tuin <span aria-hidden="true">↗</span></a></div>
+        <div class="service-hero-copy"><p class="intro-label">{props.eyebrow} · Wijchen en omgeving</p><h1>{props.heading}</h1><p>{props.lead}</p><a class="button" href={whatsapp}>Bespreek je tuin</a></div>
         <figure><img src={asset(props.heroImage)} alt={props.heroAlt} width="1800" height="2507" fetchpriority="high" /><figcaption>{props.imageLabel}</figcaption></figure>
       </section>
 
@@ -68,12 +68,12 @@ const schema = {
 
       <section class="service-story">
         <figure><img src={asset(props.detailImage)} alt={props.detailAlt} width="1800" height="2700" loading="lazy" /></figure>
-        <div><p class="section-index">Onze aanpak</p><h2>{props.storyTitle}</h2><p class="story-lead">{props.storyLead}</p><p>{props.storyText}</p><a class="inline-button" href="../over-ons/">Lees hoe wij werken ↗</a></div>
+        <div><p class="section-index">Onze aanpak</p><h2>{props.storyTitle}</h2><p class="story-lead">{props.storyLead}</p><p>{props.storyText}</p><a class="inline-button" href="../over-ons/">Lees hoe wij werken</a></div>
       </section>
 
-      <section class="contact service-contact" id="contact"><div class="contact-inner"><p>{props.closing}</p><h2>Vertel ons wat je voor ogen hebt.</h2><a class="button" href={whatsapp}>Neem contact op <span aria-hidden="true">↗</span></a><div class="contact-options"><a href="tel:+31631219202">06 31 21 92 02</a><a href="mailto:info@arienshoveniers.nl">info@arienshoveniers.nl</a></div></div></section>
+      <section class="contact service-contact" id="contact"><div class="contact-inner"><p>{props.closing}</p><h2>Vertel ons wat je voor ogen hebt.</h2><a class="button" href={whatsapp}>Neem contact op</a><div class="contact-options"><a href="tel:+31631219202">06 31 21 92 02</a><a href="mailto:info@arienshoveniers.nl">info@arienshoveniers.nl</a></div></div></section>
     </main>
-    <footer><a class="footer-logo" href="../index.html"><img src={asset('images/logo.jpg')} alt="Ariaens Hoveniers" width="150" height="150" /></a><div><p>Tuinaanleg · onderhoud · optimalisatie</p><p>Wijchen en omgeving</p></div><div><a href="https://www.instagram.com/ariaens_hoveniers/">Instagram ↗</a><a href="../index.html">Terug naar home</a></div><small>Gemaakt door <a href="https://ravi.nl/">Ravi WebDesign</a></small></footer>
+    <footer><a class="footer-logo" href="../index.html"><img src={asset('images/logo.jpg')} alt="Ariaens Hoveniers" width="150" height="150" /></a><div><p>Tuinaanleg · onderhoud · optimalisatie</p><p>Wijchen en omgeving</p></div><div><a href="https://www.instagram.com/ariaens_hoveniers/">Instagram</a><a href="../index.html">Terug naar home</a></div><small>Gemaakt door <a href="https://ravi.nl/">Ravi WebDesign</a></small></footer>
     <a class="whatsapp" href={whatsapp} aria-label="Neem contact op via WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.1 3.2A12.6 12.6 0 0 0 5.4 22.5L3.7 28.8l6.4-1.7a12.6 12.6 0 1 0 6-23.9Zm0 22.9c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a10.3 10.3 0 1 1 8.7 4.7Zm5.7-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.7.1-1.8-.9-3-1.6-4.2-3.7-.3-.6.3-.5.9-1.7.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 3s1.3 3.5 1.5 3.7c.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.4.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.5Z" /></svg><b>WhatsApp</b></a>
     <script>
       const button = document.querySelector<HTMLButtonElement>('.menu-button'); const menu = document.querySelector<HTMLElement>('#mobile-menu');
