@@ -24,9 +24,11 @@
   .mobile-root-divider {
     display: block;
     width: min(100%, 350px);
-    height: 118px;
-    margin: 20px auto -26px;
+    height: 132px;
+    margin: 18px auto -30px;
     overflow: visible;
+    transform-origin: 50% 10%;
+    animation: root-breathe 7s 2.6s ease-in-out infinite;
   }
 
   .mobile-root-divider path {
@@ -37,19 +39,34 @@
     stroke-linecap: round;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: grow 2.2s 0.25s var(--ease) forwards;
+    animation: grow 2.5s 0.2s var(--ease) forwards;
   }
 
   .mobile-root-divider .mobile-root-trunk {
     stroke: rgba(255, 255, 255, 0.82);
-    stroke-width: 1.55;
+    stroke-width: 2.15;
+  }
+
+  .mobile-root-divider .mobile-root-crown path {
+    animation-delay: 0.48s;
+  }
+
+  .mobile-root-divider .mobile-root-fine {
+    opacity: 0.62;
+    stroke-width: 0.8;
+    animation-delay: 0.82s;
   }
 }
 
 @media (max-width: 520px) {
   .mobile-root-divider {
     width: calc(100% - 26px);
-    height: 104px;
+    height: 118px;
     margin-top: 14px;
   }
+}
+
+@keyframes root-breathe {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.018); }
 }
