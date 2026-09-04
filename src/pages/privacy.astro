@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import Seo from '@jdevalk/astro-seo-graph/Seo.astro';
+import InstagramIcon from '../components/InstagramIcon.astro';
+
+const base = import.meta.env.BASE_URL;
+const asset = (path: string) => `${base}/${path}`.replace(/\/+/g, '/');
+const canonical = new URL(`${base}/privacy/`.replace(/\/+/g, '/'), Astro.site);
+const title = 'Privacyverklaring | Ariaens Hoveniers';
+const description = 'Lees hoe Ariaens Hoveniers omgaat met contactgegevens, websitegegevens en jouw privacyrechten.';
+const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: canonical.href, dateModified: '2026-09-04' };
+---
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" /><link rel="icon" href={asset('images/logo.jpg')} />
+  <Seo title={title} description={description} canonical={canonical} siteName="Ariaens Hoveniers" locale="nl_NL" graph={schema} />
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
+  <header class="site-header inner-header">
+    <a class="wordmark" href="../index.html" aria-label="Naar de homepage"><img src={asset('images/logo.jpg')} alt="" width="150" height="150" /></a>
+    <nav aria-label="Hoofdnavigatie"><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a></nav>
+    <a class="button button-small" href="../index.html#contact">Neem contact op</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    <div class="mobile-menu" id="mobile-menu" hidden><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a><a href="../index.html#contact">Contact</a></div>
+  </header>
+  <main class="legal-main" id="inhoud">
+    <header class="legal-intro"><p class="intro-label">Laatst bijgewerkt op 4 september 2026</p><h1>Privacy, helder uitgelegd.</h1><p>Hier lees je welke persoonsgegevens Ariaens Hoveniers gebruikt wanneer je contact opneemt of de website bezoekt.</p></header>
+    <div class="legal-content">
+      <nav class="legal-nav" aria-label="Onderdelen privacyverklaring"><a href="#verantwoordelijke">Wie verantwoordelijk is</a><a href="#gegevens">Welke gegevens</a><a href="#doelen">Waarom en hoelang</a><a href="#delen">Delen en diensten</a><a href="#rechten">Jouw rechten</a></nav>
+      <div class="legal-copy">
+        <section id="verantwoordelijke"><h2>Wie verantwoordelijk is</h2><p>Ariaens Hoveniers is verantwoordelijk voor het gebruik van persoonsgegevens dat in deze verklaring staat beschreven.</p><dl class="legal-details"><div><dt>Handelsnaam</dt><dd>Ariaens Hoveniers</dd></div><div><dt>Vestigingsplaats</dt><dd>Wijchen</dd></div><div><dt>KvK-nummer</dt><dd>91243521</dd></div><div><dt>E-mail</dt><dd><a href="mailto:info@arienshoveniers.nl">info@arienshoveniers.nl</a></dd></div><div><dt>Telefoon</dt><dd><a href="tel:+31631219202">06 31 21 92 02</a></dd></div></dl></section>
+        <section id="gegevens"><h2>Welke gegevens we gebruiken</h2><p>Als je belt, mailt of WhatsApp gebruikt, ontvangen we de gegevens die je zelf deelt. Dat kunnen je naam, contactgegevens, woonplaats, projectinformatie, foto’s en berichten zijn. De website kan daarnaast technische gegevens verwerken, zoals je IP-adres, browsertype en het tijdstip van je bezoek.</p></section>
+        <section id="doelen"><h2>Waarom en hoelang</h2><p>We gebruiken gegevens om je vraag te beantwoorden, een afspraak of offerte voor te bereiden, werkzaamheden uit te voeren en onze administratie bij te houden. De grondslag is meestal de voorbereiding of uitvoering van een overeenkomst, een wettelijke plicht of een gerechtvaardigd bedrijfsbelang.</p><p>We bewaren gegevens niet langer dan nodig voor het doel waarvoor we ze kregen. Voor administratie en facturen volgen we de wettelijke bewaartermijnen. Overige contactgegevens verwijderen we zodra ze niet meer nodig zijn voor de aanvraag, opdracht of redelijke nazorg.</p></section>
+        <section id="delen"><h2>Delen met andere partijen</h2><p>We verkopen persoonsgegevens niet. Gegevens worden alleen gedeeld wanneer dat nodig is voor de dienstverlening, administratie, beveiliging of een wettelijke verplichting.</p><ul><li>Bij contact via WhatsApp verwerkt WhatsApp Ireland Limited jouw gegevens volgens het eigen privacybeleid.</li><li>De hostingprovider kan technische gegevens verwerken om de website veilig en bereikbaar te houden.</li><li>De website laadt lettertypen van Google Fonts. Daarbij kan je browser technische gegevens, waaronder je IP-adres, met Google delen.</li></ul><p>Sommige leveranciers kunnen gegevens buiten de Europese Economische Ruimte verwerken. In dat geval steunt de verwerking op de waarborgen die de betreffende leverancier hiervoor biedt.</p></section>
+        <section id="rechten"><h2>Jouw privacyrechten</h2><p>Je kunt vragen om inzage, correctie, verwijdering, beperking of overdracht van je gegevens. Je kunt ook bezwaar maken tegen een verwerking. Stuur je verzoek naar <a href="mailto:info@arienshoveniers.nl">info@arienshoveniers.nl</a>. We kunnen om aanvullende informatie vragen om je identiteit te controleren.</p><p>Ben je niet tevreden over hoe je gegevens worden gebruikt? Dan kun je een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl/">Autoriteit Persoonsgegevens</a>.</p></section>
+      </div>
+    </div>
+  </main>
+  <footer><a class="footer-logo" href="../index.html"><img src={asset('images/logo.jpg')} alt="Ariaens Hoveniers" width="150" height="150" /></a><div><p>Tuinaanleg · onderhoud · optimalisatie</p><p>Wijchen en omgeving</p></div><div><a class="social-link" href="https://www.instagram.com/ariaens_hoveniers/" aria-label="Bekijk Ariaens Hoveniers op Instagram"><InstagramIcon /></a><a href="../index.html">Terug naar home</a></div><small class="footer-legal">Ariaens Hoveniers · KvK 91243521 · <a href="./">Privacy</a></small><small>Gemaakt door <a href="https://ravi.nl/">Ravi WebDesign</a></small></footer>
+  <script>
+    const button = document.querySelector<HTMLButtonElement>('.menu-button'); const menu = document.querySelector<HTMLElement>('#mobile-menu');
+    button?.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') === 'true'; button.setAttribute('aria-expanded', String(!open)); if (menu) menu.hidden = open; });
+  </script>
+</body>
+</html>
