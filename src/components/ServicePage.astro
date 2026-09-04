@@ -57,6 +57,15 @@ const schema = {
       <div class="mobile-menu" id="mobile-menu" hidden><a href="../tuinaanleg/">Tuinaanleg</a><a href="../onderhoud/">Onderhoud</a><a href="../tuinoptimalisatie/">Tuinoptimalisatie</a><a href="../over-ons/">Over ons</a><a href="#contact">Contact</a></div>
     </header>
     <main id="inhoud">
+      <svg class="service-vines" viewBox="0 0 1200 3400" preserveAspectRatio="none" aria-hidden="true">
+        <path class="service-vine-main" pathLength="1" d="M0 0H965C1085 0 1128 78 1128 205V760C1128 930 1048 1014 1000 1148C946 1298 978 1430 1092 1550C1170 1632 1162 1770 1060 1870C948 1980 918 2118 980 2260C1042 2400 1018 2530 900 2645C786 2756 760 2892 824 3028C870 3128 850 3250 772 3400" />
+        <path class="service-vine-main service-vine-twin" pathLength="1" d="M0 8H950C1070 8 1113 86 1113 213V752C1113 920 1033 1006 985 1142C931 1296 963 1438 1077 1558C1155 1640 1147 1762 1045 1862C933 1972 903 2126 965 2268C1027 2408 1003 2522 885 2637C771 2748 745 2900 809 3036C855 3136 835 3258 757 3400" />
+        <path class="service-vine-branch" pathLength="1" d="M1000 1148C900 1130 828 1074 780 980" />
+        <path class="service-vine-branch" pathLength="1" d="M1092 1550C1010 1580 950 1638 914 1726" />
+        <path class="service-vine-branch" pathLength="1" d="M1060 1870C1144 1914 1180 1982 1188 2060" />
+        <path class="service-vine-branch" pathLength="1" d="M980 2260C880 2290 812 2354 776 2450" />
+        <path class="service-vine-branch" pathLength="1" d="M900 2645C998 2680 1054 2748 1074 2840" />
+      </svg>
       <section class="service-hero">
         <div class="service-hero-copy"><p class="intro-label">{props.eyebrow} · Wijchen en omgeving</p><h1>{props.heading}</h1><p>{props.lead}</p><a class="button" href={whatsapp}>Bespreek je tuin</a></div>
         <figure><img src={asset(props.heroImage)} alt={props.heroAlt} width="1800" height="2507" fetchpriority="high" /><figcaption>{props.imageLabel}</figcaption></figure>
