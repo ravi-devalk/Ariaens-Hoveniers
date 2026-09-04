@@ -661,6 +661,11 @@ footer > small {
   :root {
     --page: calc(100vw - 32px);
   }
+  .site-vines,
+  .root-system,
+  .about-vines {
+    display: none;
+  }
   .site-header {
     height: 90px;
     gap: 0;
